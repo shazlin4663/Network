@@ -22,13 +22,20 @@
         android:layout_alignBaseline="@id/textSearch"
         android:layout_alignBottom="@id/textSearch"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="14dp" />
+        android:text="@string/search"/>
     
-    <ListView 
+  <!--  <ListView 
         android:id = "@+id/listView"
         android:layout_width="fill_parent"
         android:layout_height = "fill_parent"
         android:layout_below = "@id/textSearch"
-        ></ListView>
+        ></ListView> --> 
 
+    <TextView
+        android:id="@+id/textURL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearch"
+       android:text ="test"
+        />
 </RelativeLayout>
