@@ -24,18 +24,10 @@
         android:layout_alignParentRight="true"
         android:text="@string/search"/>
     
-  <!--  <ListView 
+   <ListView 
         android:id = "@+id/listView"
         android:layout_width="fill_parent"
         android:layout_height = "fill_parent"
         android:layout_below = "@id/textSearch"
-        ></ListView> --> 
-
-    <TextView
-        android:id="@+id/textURL"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnSearch"
-       android:text ="test"
-        />
+        ></ListView> 
 </RelativeLayout>
