@@ -5,6 +5,9 @@
     <string name="action_settings">Settings</string>
     <string name="search">Search</string>
     <string name="title_activity_place_items">Place_items</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="name"> Name </string>
+    <string name = "address"> address </string>
+    <string name = "image"> place image</string>
+    <string name = "summary"> Summary of this place </string>
 
 </resources>

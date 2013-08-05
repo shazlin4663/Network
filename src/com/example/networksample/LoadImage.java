@@ -1,26 +1,17 @@
 package com.example.networksample;
 
-import java.io.BufferedReader;
+
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+
+
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
+
 import android.os.AsyncTask;
-import android.util.Log;
-import android.widget.ListAdapter;
-import android.widget.Toast;
 
 
 public class LoadImage extends AsyncTask<String, Void, Bitmap> {
@@ -65,7 +56,7 @@ private Bitmap downloadUrl(String myurl) throws IOException {
 	        conn.setDoInput(true);
 	        // Starts the query
 	        conn.connect();
-	        int response = conn.getResponseCode();
+	        //int response = conn.getResponseCode();
 	       // Log.d(DEBUG_TAG, "The response is: " + response);
 	        is = conn.getInputStream();
 

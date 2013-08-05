@@ -9,25 +9,39 @@
     android:orientation="vertical"
     tools:context=".Place_items" >
 
-    <TextView
-        android:id = "@+id/viewName"
+    <ImageView
+        android:id="@+id/viewImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/image"
+        android:src="@drawable/ic_launcher" />
     <TextView
-        android:id = "@+id/viewAddress"
+        android:id="@+id/viewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/viewImage"
+        android:text="@string/name" />
+    
+     <TextView
+        android:id="@+id/viewAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/viewName"
-        android:text="@string/hello_world" />
-    
-    <ImageView 
-        android:id = "@+id/viewImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/viewName"
-        android:contentDescription="Icon"
-        />
-    
-
+        android:layout_toRightOf="@id/viewImage"
+        android:text="@string/address" />
+     <TextView 
+         android:id = "@+id/viewSummary"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below ="@id/viewAddress"
+         android:layout_toRightOf="@id/viewImage"
+         android:text = "@string/summary" />
+      <TextView 
+         android:id = "@+id/viewRate"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below ="@id/viewSummary"
+         android:layout_toRightOf="@id/viewImage"
+         android:text = "@string/summary" />
 </RelativeLayout>

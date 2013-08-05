@@ -1,13 +1,10 @@
 package com.example.networksample;
 
-import java.net.URL;
 import java.util.List;
 
-import android.os.Bundle;
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.Menu;
+
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -52,10 +49,19 @@ public class PlaceItems extends BaseAdapter {
 		TextView viewName = (TextView) placeView.findViewById(R.id.viewName);
 		TextView viewAddress = (TextView) placeView.findViewById(R.id.viewAddress);
 		ImageView viewImage = (ImageView) placeView.findViewById(R.id.viewImage);
-			
+		TextView viewSummary = (TextView) placeView.findViewById(R.id.viewSummary);	
+		TextView viewRate = (TextView) placeView.findViewById(R.id.viewRate);	
+		
 		
 		viewName.setText(name);
 		viewAddress.setText(address);
+		viewRate.setText(currentPlace.getRate());
+		
+		if (currentPlace.getSummary() != null)
+			viewSummary.setText(currentPlace.getSummary());
+		else
+			viewSummary.setText("");
+		
 		if (currentPlace.getBitmap() != null) {
 			viewImage.setImageBitmap(currentPlace.getBitmap());
 		}

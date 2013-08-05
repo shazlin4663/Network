@@ -3,10 +3,22 @@ package com.example.networksample;
 import android.graphics.Bitmap;
 
 public class Place {
-	private String _address, _iconURL, _id, _name, _reference;
+	private String _address, _iconURL, _id, _name, _reference, _summary, _rate;
 	private Bitmap _image;
 
 
+	public String getRate() {
+		return _rate;
+	}
+	public void setRate(String rate) {
+		_rate = rate;
+	}
+	public void setSummary (String summary) {
+		_summary = summary;
+	}
+	public String getSummary () {
+		return _summary;
+	}
 	public Bitmap getBitmap() {
 		return _image;
 	}
